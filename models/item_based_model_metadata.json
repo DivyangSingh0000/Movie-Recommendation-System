@@ -1,0 +1,9 @@
+{
+  "type": "collaborative",
+  "algorithm": "item_based",
+  "trained_at": "2026-01-12T19:32:26.759824",
+  "data_shape": [
+    1,
+    1
+  ]
+}

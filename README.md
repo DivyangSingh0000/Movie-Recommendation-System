@@ -117,6 +117,20 @@ This will:
 ./run.sh serve
 ```
 
+Alternative (recommended for local dev when `run.sh`/uvicorn string parsing is problematic):
+
+```bash
+# Run the helper that constructs the app and launches uvicorn
+python run_app.py
+```
+
+Quick verify (no server process needed):
+
+```bash
+# Runs a TestClient against the app and saves openapi.json
+python run_test_openapi.py
+```
+
 - **Working API URL:** http://localhost:8000
 - **API Documentation (Swagger UI):** http://localhost:8000/docs
 - **API Documentation (ReDoc):** http://localhost:8000/redoc
@@ -367,6 +381,49 @@ For support, please:
 ---
 
 This repository implements a modular, extensible movie recommendation system with automation for data validation, an ETL pipeline, multiple recommendation algorithms, a FastAPI service layer, and storage/repository patterns for production readiness.
+
+## Local Verification Performed
+
+I verified the API and pipeline locally in this workspace. Summary of actions and useful commands:
+
+- **What I added**:
+  - `run_app.py` — helper to construct the FastAPI app and run `uvicorn` reliably.
+  - `run_test_openapi.py` — TestClient script to fetch `/openapi.json` (no server required).
+  - `run_test_recommend.py` — TestClient script to call `/api/v1/recommendations/{user_id}`.
+  - Sample input files under `data/input/` (`metadata.json`, `data.csv`) used for pipeline smoke tests.
+
+- **What I ran**:
+  - `python run_test_openapi.py` — saved `openapi.json` (status 200).
+  - `python main.py load-data --input data/input` — ETL completed and saved processed data to `data/processed/`.
+  - `python main.py train` — trained models saved to `models/`.
+  - `python run_test_recommend.py` — exercised recommendation endpoint via TestClient.
+
+- **Artifacts created**:
+  - `openapi.json` (in repo root)
+  - `models/*.pkl` (trained models)
+  - `data/processed/*.parquet` (processed artifacts)
+  - `logs/recommendation_system.log`
+
+- **How to run locally (recommended)**:
+
+```bash
+# Start API in a persistent terminal
+python run_app.py
+
+# Or verify without running a server
+python run_test_openapi.py
+python run_test_recommend.py
+
+# Full pipeline locally
+python main.py load-data --input data/input
+python main.py train
+```
+
+Notes:
+- I made SQLAlchemy imports lazy to avoid import-time failures in environments with incompatible SQLAlchemy versions. See `data_pipeline/load/__init__.py`.
+- For reliable local uvicorn runs, prefer `python run_app.py` if shell quoting of the ASGI string causes issues.
+
+If you'd like, I can open a persistent server here and stream logs, or expand the sample dataset and re-run training to generate richer recommendations.
 Movie Recommendation System
 
 Repository layout:

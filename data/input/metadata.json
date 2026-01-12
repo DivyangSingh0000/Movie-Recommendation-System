@@ -1,0 +1,19 @@
+{
+  "movies": [
+    {
+      "movie_id": "tt0000001",
+      "title": "Example Movie",
+      "genres": "Drama",
+      "release_year": 2020,
+      "description": "A short example movie",
+      "directors": ["Jane Doe"],
+      "actors": ["Actor A", "Actor B"],
+      "imdb_rating": 7.0,
+      "duration_minutes": 95,
+      "language": "English",
+      "country": "USA",
+      "poster_url": "http://example.com/poster.jpg",
+      "trailer_url": "http://example.com/trailer.mp4"
+    }
+  ]
+}

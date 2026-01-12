@@ -155,11 +155,19 @@ class DataTransformer:
             ]
             
             # Calculate user activity level
-            user_features['activity_level'] = pd.qcut(
-                user_features['interaction_count'],
-                q=4,
-                labels=['low', 'medium', 'high', 'very_high']
-            )
+            # Calculate user activity level; fall back when there are too few unique values
+            try:
+                if user_features['interaction_count'].nunique() >= 4:
+                    user_features['activity_level'] = pd.qcut(
+                        user_features['interaction_count'],
+                        q=4,
+                        labels=['low', 'medium', 'high', 'very_high']
+                    )
+                else:
+                    # Not enough distinct values to quantile; assign 'low' for now
+                    user_features['activity_level'] = 'low'
+            except Exception:
+                user_features['activity_level'] = 'low'
             
             # Calculate rating tendency
             user_features['rating_tendency'] = user_features['avg_rating'].apply(
@@ -335,7 +343,14 @@ class DataTransformer:
         # Fill categorical columns with mode
         categorical_cols = df.select_dtypes(include=['object']).columns
         for col in categorical_cols:
-            df[col] = df[col].fillna(df[col].mode()[0] if not df[col].mode().empty else 'Unknown')
+            if not df[col].mode().empty:
+                mode_val = df[col].mode()[0]
+                # If mode is a list or non-scalar, convert to string
+                if isinstance(mode_val, (list, tuple)):
+                    mode_val = ' '.join(map(str, mode_val))
+            else:
+                mode_val = 'Unknown'
+            df[col] = df[col].fillna(mode_val)
         
         return df
     

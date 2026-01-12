@@ -1,0 +1,11 @@
+{
+  "type": "hybrid",
+  "strategy": "weighted",
+  "weights": {
+    "user_based": 0.25,
+    "item_based": 0.25,
+    "matrix_factorization": 0.25,
+    "content_based": 0.25
+  },
+  "trained_at": "2026-01-12T19:32:27.004337"
+}

@@ -11,6 +11,8 @@ from pathlib import Path
 # Add the project root to Python path
 sys.path.insert(0, str(Path(__file__).parent))
 
+import pandas as pd
+
 from data_pipeline.extract import DataExtractor
 from data_pipeline.transform import DataTransformer
 from data_pipeline.load import DataLoader
@@ -32,7 +34,7 @@ from api.middleware import (
 import uvicorn
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-from typing import Dict, Any
+from typing import List, Dict, Any
 
 # Setup logging
 logging.basicConfig(
@@ -66,6 +68,10 @@ class MovieRecommendationSystem:
             'database': {
                 'path': 'data/recommendation.db'
             },
+            'storage': {
+                'processed_data_path': 'data/processed/',
+                'models_path': 'models/'
+            },
             'api': {
                 'host': '0.0.0.0',
                 'port': 8000,
@@ -88,7 +94,8 @@ class MovieRecommendationSystem:
         # Initialize data pipeline
         self.data_extractor = DataExtractor()
         self.data_transformer = DataTransformer()
-        self.data_loader = DataLoader(self.config['data'])
+        # Pass full config to DataLoader (it expects database and storage keys)
+        self.data_loader = DataLoader(self.config)
         
         # Initialize repositories
         self.movie_repo = MovieRepository(self.config['database']['path'])

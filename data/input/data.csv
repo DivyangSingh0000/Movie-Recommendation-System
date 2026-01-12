@@ -1,0 +1,2 @@
+user_id,movie_id,rating,timestamp,interaction_type
+user1,tt0000001,5.0,2025-12-01T10:00:00,rating

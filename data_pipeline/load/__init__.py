@@ -11,7 +11,9 @@ from typing import Dict, List, Any, Optional, Union
 import logging
 from pathlib import Path
 import sqlite3
-from sqlalchemy import create_engine, Table, Column, Integer, String, Float, MetaData
+# Delay importing SQLAlchemy until it's required (avoid import-time errors
+# when SQLAlchemy is not compatible with the runtime). Import dynamically
+# inside functions that need it.
 
 logger = logging.getLogger(__name__)
 
@@ -131,7 +133,8 @@ class DataLoader:
             if db_config['type'] == 'sqlite':
                 conn = sqlite3.connect(db_config['path'])
             else:
-                # For other database types, use SQLAlchemy
+                # For other database types, import SQLAlchemy lazily and create engine
+                from sqlalchemy import create_engine
                 engine = create_engine(db_config.get('connection_string'))
                 conn = engine.connect()
             
@@ -166,6 +169,8 @@ class DataLoader:
             if db_config['type'] == 'sqlite':
                 conn = sqlite3.connect(db_config['path'])
             else:
+                # Lazily import SQLAlchemy to avoid import-time failures
+                from sqlalchemy import create_engine
                 engine = create_engine(db_config.get('connection_string'))
                 conn = engine.connect()
             

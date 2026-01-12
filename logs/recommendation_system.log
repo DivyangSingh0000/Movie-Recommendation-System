@@ -1,0 +1,201 @@
+2026-01-12 19:20:55,217 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:20:55,222 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:20:55,224 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:20:55,226 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:20:55,226 - __main__ - INFO - Movie Recommendation System initialized
+2026-01-12 19:20:55,658 - __main__ - INFO - Starting Movie Recommendation System API
+2026-01-12 19:21:14,918 - __main__ - INFO - Shutting down Movie Recommendation System API
+2026-01-12 19:22:32,779 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:22:32,781 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:22:32,783 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:22:32,784 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:22:32,785 - main - INFO - Movie Recommendation System initialized
+2026-01-12 19:22:32,952 - main - INFO - Starting Movie Recommendation System API
+2026-01-12 19:22:40,937 - main - INFO - Shutting down Movie Recommendation System API
+2026-01-12 19:23:14,831 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:23:14,833 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:23:14,835 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:23:14,837 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:23:14,838 - main - INFO - Movie Recommendation System initialized
+2026-01-12 19:23:15,000 - httpx - INFO - HTTP Request: GET http://testserver/openapi.json "HTTP/1.1 200 OK"
+2026-01-12 19:28:49,864 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:28:49,865 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:28:49,866 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:28:49,868 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:28:49,868 - main - INFO - Movie Recommendation System initialized
+2026-01-12 19:28:49,992 - main - INFO - Starting Movie Recommendation System API
+2026-01-12 19:29:05,742 - main - INFO - Shutting down Movie Recommendation System API
+2026-01-12 19:29:38,245 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:29:38,246 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:29:38,247 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:29:38,249 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:29:38,249 - __main__ - INFO - Movie Recommendation System initialized
+2026-01-12 19:29:38,250 - __main__ - INFO - Loading data from: data/input
+2026-01-12 19:29:38,250 - data_pipeline.extract - INFO - Extracting all data from: data/input
+2026-01-12 19:29:38,250 - data_pipeline.extract - INFO - Successfully extracted all data
+2026-01-12 19:29:38,251 - __main__ - WARNING - No data extracted
+2026-01-12 19:30:13,499 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:30:13,500 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:30:13,502 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:30:13,503 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:30:13,503 - __main__ - INFO - Movie Recommendation System initialized
+2026-01-12 19:30:13,504 - __main__ - INFO - Loading data from: data/input
+2026-01-12 19:30:13,504 - data_pipeline.extract - INFO - Extracting all data from: data/input
+2026-01-12 19:30:13,505 - data_pipeline.extract - INFO - Extracting data from JSON: data/input\metadata.json
+2026-01-12 19:30:13,507 - data_pipeline.extract - INFO - Successfully extracted data from data/input\metadata.json
+2026-01-12 19:30:13,574 - data_pipeline.extract - INFO - Extracted metadata for 1 movies
+2026-01-12 19:30:13,582 - data_pipeline.extract - INFO - Extracting data from CSV: data/input\data.csv
+2026-01-12 19:30:13,682 - data_pipeline.extract - INFO - Successfully extracted 1 rows from data/input\data.csv
+2026-01-12 19:30:13,683 - data_pipeline.extract - INFO - Extracted 1 user interactions
+2026-01-12 19:30:13,683 - data_pipeline.extract - INFO - Successfully extracted all data
+2026-01-12 19:30:13,683 - data_pipeline.transform - INFO - Cleaning movie metadata
+2026-01-12 19:30:13,731 - data_pipeline.transform - ERROR - Error cleaning metadata: "value" parameter must be a scalar or dict, but you passed a "list"
+2026-01-12 19:30:13,732 - __main__ - ERROR - Error loading data: "value" parameter must be a scalar or dict, but you passed a "list"
+2026-01-12 19:30:34,610 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:30:34,612 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:30:34,614 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:30:34,615 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:30:34,616 - __main__ - INFO - Movie Recommendation System initialized
+2026-01-12 19:30:34,616 - __main__ - INFO - Loading data from: data/input
+2026-01-12 19:30:34,617 - data_pipeline.extract - INFO - Extracting all data from: data/input
+2026-01-12 19:30:34,618 - data_pipeline.extract - INFO - Extracting data from JSON: data/input\metadata.json
+2026-01-12 19:30:34,622 - data_pipeline.extract - INFO - Successfully extracted data from data/input\metadata.json
+2026-01-12 19:30:34,627 - data_pipeline.extract - INFO - Extracted metadata for 1 movies
+2026-01-12 19:30:34,628 - data_pipeline.extract - INFO - Extracting data from CSV: data/input\data.csv
+2026-01-12 19:30:34,644 - data_pipeline.extract - INFO - Successfully extracted 1 rows from data/input\data.csv
+2026-01-12 19:30:34,645 - data_pipeline.extract - INFO - Extracted 1 user interactions
+2026-01-12 19:30:34,645 - data_pipeline.extract - INFO - Successfully extracted all data
+2026-01-12 19:30:34,646 - data_pipeline.transform - INFO - Cleaning movie metadata
+2026-01-12 19:30:34,667 - data_pipeline.transform - ERROR - Error cleaning metadata: "value" parameter must be a scalar or dict, but you passed a "list"
+2026-01-12 19:30:34,667 - __main__ - ERROR - Error loading data: "value" parameter must be a scalar or dict, but you passed a "list"
+2026-01-12 19:31:16,608 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:31:16,612 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:31:16,617 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:31:16,620 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:31:16,620 - __main__ - INFO - Movie Recommendation System initialized
+2026-01-12 19:31:16,621 - __main__ - INFO - Loading data from: data/input
+2026-01-12 19:31:16,622 - data_pipeline.extract - INFO - Extracting all data from: data/input
+2026-01-12 19:31:16,623 - data_pipeline.extract - INFO - Extracting data from JSON: data/input\metadata.json
+2026-01-12 19:31:16,626 - data_pipeline.extract - INFO - Successfully extracted data from data/input\metadata.json
+2026-01-12 19:31:16,635 - data_pipeline.extract - INFO - Extracted metadata for 1 movies
+2026-01-12 19:31:16,636 - data_pipeline.extract - INFO - Extracting data from CSV: data/input\data.csv
+2026-01-12 19:31:16,655 - data_pipeline.extract - INFO - Successfully extracted 1 rows from data/input\data.csv
+2026-01-12 19:31:16,655 - data_pipeline.extract - INFO - Extracted 1 user interactions
+2026-01-12 19:31:16,656 - data_pipeline.extract - INFO - Successfully extracted all data
+2026-01-12 19:31:16,658 - data_pipeline.transform - INFO - Cleaning movie metadata
+2026-01-12 19:31:16,705 - data_pipeline.transform - INFO - Cleaned metadata for 1 movies
+2026-01-12 19:31:16,706 - data_pipeline.transform - INFO - Cleaning user interactions
+2026-01-12 19:31:16,844 - data_pipeline.transform - INFO - Cleaned 1 interactions
+2026-01-12 19:31:16,847 - data_pipeline.transform - INFO - Creating user features
+2026-01-12 19:31:16,877 - data_pipeline.transform - ERROR - Error creating user features: Bin edges must be unique: Index([1.0, 1.0, 1.0, 1.0, 1.0], dtype='float64', name='interaction_count').
+You can drop duplicate edges by setting the 'duplicates' kwarg
+2026-01-12 19:31:16,878 - __main__ - ERROR - Error loading data: Bin edges must be unique: Index([1.0, 1.0, 1.0, 1.0, 1.0], dtype='float64', name='interaction_count').
+You can drop duplicate edges by setting the 'duplicates' kwarg
+2026-01-12 19:32:08,974 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:08,976 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:08,978 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:08,981 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:08,981 - __main__ - INFO - Movie Recommendation System initialized
+2026-01-12 19:32:08,981 - __main__ - INFO - Loading data from: data/input
+2026-01-12 19:32:08,982 - data_pipeline.extract - INFO - Extracting all data from: data/input
+2026-01-12 19:32:08,983 - data_pipeline.extract - INFO - Extracting data from JSON: data/input\metadata.json
+2026-01-12 19:32:08,984 - data_pipeline.extract - INFO - Successfully extracted data from data/input\metadata.json
+2026-01-12 19:32:08,987 - data_pipeline.extract - INFO - Extracted metadata for 1 movies
+2026-01-12 19:32:08,987 - data_pipeline.extract - INFO - Extracting data from CSV: data/input\data.csv
+2026-01-12 19:32:08,998 - data_pipeline.extract - INFO - Successfully extracted 1 rows from data/input\data.csv
+2026-01-12 19:32:08,999 - data_pipeline.extract - INFO - Extracted 1 user interactions
+2026-01-12 19:32:08,999 - data_pipeline.extract - INFO - Successfully extracted all data
+2026-01-12 19:32:08,999 - data_pipeline.transform - INFO - Cleaning movie metadata
+2026-01-12 19:32:09,021 - data_pipeline.transform - INFO - Cleaned metadata for 1 movies
+2026-01-12 19:32:09,022 - data_pipeline.transform - INFO - Cleaning user interactions
+2026-01-12 19:32:09,040 - data_pipeline.transform - INFO - Cleaned 1 interactions
+2026-01-12 19:32:09,041 - data_pipeline.transform - INFO - Creating user features
+2026-01-12 19:32:09,055 - data_pipeline.transform - INFO - Created features for 1 users
+2026-01-12 19:32:09,056 - data_pipeline.transform - INFO - Creating movie features
+2026-01-12 19:32:09,175 - data_pipeline.transform - INFO - Created features for 1 movies
+2026-01-12 19:32:09,175 - data_pipeline.transform - INFO - Creating interaction matrix
+2026-01-12 19:32:09,204 - data_pipeline.transform - INFO - Created interaction matrix: (1, 1)
+2026-01-12 19:32:09,205 - data_pipeline.load - INFO - Saving data to disk in parquet format
+2026-01-12 19:32:10,013 - data_pipeline.load - INFO - Saved metadata to data\processed\metadata.parquet
+2026-01-12 19:32:10,020 - data_pipeline.load - INFO - Saved interactions to data\processed\interactions.parquet
+2026-01-12 19:32:10,033 - data_pipeline.load - INFO - Saved user_features to data\processed\user_features.parquet
+2026-01-12 19:32:10,062 - data_pipeline.load - INFO - Saved movie_features to data\processed\movie_features.parquet
+2026-01-12 19:32:10,071 - data_pipeline.load - INFO - Saved interaction_matrix to data\processed\interaction_matrix.parquet
+2026-01-12 19:32:10,168 - storage.repositories - INFO - Saved movie: tt0000001
+2026-01-12 19:32:10,168 - storage.repositories - INFO - Saved 1 movies in batch
+2026-01-12 19:32:10,169 - __main__ - INFO - Saved 1 movies to database
+2026-01-12 19:32:10,169 - __main__ - INFO - Data loaded and processed successfully
+2026-01-12 19:32:25,265 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:25,267 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:25,268 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:25,270 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:25,270 - __main__ - INFO - Movie Recommendation System initialized
+2026-01-12 19:32:25,270 - __main__ - INFO - Training recommendation models
+2026-01-12 19:32:25,271 - data_pipeline.load - INFO - Loading data from disk in parquet format
+2026-01-12 19:32:26,643 - data_pipeline.load - INFO - Loaded metadata from data\processed\metadata.parquet
+2026-01-12 19:32:26,691 - data_pipeline.load - INFO - Loaded interactions from data\processed\interactions.parquet
+2026-01-12 19:32:26,729 - data_pipeline.load - INFO - Loaded interaction_matrix from data\processed\interaction_matrix.parquet
+2026-01-12 19:32:26,730 - __main__ - INFO - Training user_based model
+2026-01-12 19:32:26,731 - recommendation.collaborative - INFO - Computing user similarity matrix
+2026-01-12 19:32:26,747 - recommendation.collaborative - INFO - User-based CF model fitted
+2026-01-12 19:32:26,752 - data_pipeline.load - INFO - Saved model 'user_based_model' to models\user_based_model.pkl
+2026-01-12 19:32:26,755 - __main__ - INFO - Training item_based model
+2026-01-12 19:32:26,755 - recommendation.collaborative - INFO - Computing item similarity matrix
+2026-01-12 19:32:26,759 - recommendation.collaborative - INFO - Item-based CF model fitted
+2026-01-12 19:32:26,765 - data_pipeline.load - INFO - Saved model 'item_based_model' to models\item_based_model.pkl
+2026-01-12 19:32:26,769 - __main__ - INFO - Training matrix_factorization model
+2026-01-12 19:32:26,770 - recommendation.collaborative - INFO - Training matrix factorization with 50 factors
+2026-01-12 19:32:26,786 - recommendation.collaborative - INFO - Epoch 5/20, RMSE: 0.0203
+2026-01-12 19:32:26,788 - recommendation.collaborative - INFO - Epoch 10/20, RMSE: 0.0174
+2026-01-12 19:32:26,789 - recommendation.collaborative - INFO - Epoch 15/20, RMSE: 0.0150
+2026-01-12 19:32:26,791 - recommendation.collaborative - INFO - Epoch 20/20, RMSE: 0.0129
+2026-01-12 19:32:26,791 - recommendation.collaborative - INFO - Matrix factorization model fitted
+2026-01-12 19:32:26,797 - data_pipeline.load - INFO - Saved model 'matrix_factorization_model' to models\matrix_factorization_model.pkl
+2026-01-12 19:32:26,803 - __main__ - INFO - Training content-based model
+2026-01-12 19:32:26,804 - recommendation.content_based - INFO - Preparing features for content-based recommendation
+2026-01-12 19:32:26,915 - recommendation.content_based - INFO - Prepared 15 features for 1 movies
+2026-01-12 19:32:26,917 - recommendation.content_based - INFO - Computing content similarity matrix
+2026-01-12 19:32:26,919 - recommendation.content_based - INFO - Content-based model fitted
+2026-01-12 19:32:26,922 - data_pipeline.load - INFO - Saved model 'content_based_model' to models\content_based_model.pkl
+2026-01-12 19:32:26,924 - __main__ - INFO - Training hybrid model
+2026-01-12 19:32:26,929 - recommendation.hybrid - INFO - Fitting hybrid recommender components
+2026-01-12 19:32:26,930 - recommendation.hybrid - INFO - Fitting user_based recommender
+2026-01-12 19:32:26,930 - recommendation.hybrid - INFO - Fitting item_based recommender
+2026-01-12 19:32:26,931 - recommendation.hybrid - INFO - Fitting matrix_factorization recommender
+2026-01-12 19:32:26,931 - recommendation.collaborative - INFO - Training matrix factorization with 50 factors
+2026-01-12 19:32:26,933 - recommendation.collaborative - INFO - Epoch 5/20, RMSE: 0.0602
+2026-01-12 19:32:26,934 - recommendation.collaborative - INFO - Epoch 10/20, RMSE: 0.0514
+2026-01-12 19:32:26,935 - recommendation.collaborative - INFO - Epoch 15/20, RMSE: 0.0440
+2026-01-12 19:32:26,936 - recommendation.collaborative - INFO - Epoch 20/20, RMSE: 0.0376
+2026-01-12 19:32:26,937 - recommendation.collaborative - INFO - Matrix factorization model fitted
+2026-01-12 19:32:26,938 - recommendation.hybrid - INFO - Fitting content_based recommender
+2026-01-12 19:32:26,939 - recommendation.content_based - INFO - Preparing features for content-based recommendation
+2026-01-12 19:32:26,999 - recommendation.content_based - INFO - Prepared 15 features for 1 movies
+2026-01-12 19:32:27,001 - recommendation.content_based - INFO - Computing content similarity matrix
+2026-01-12 19:32:27,003 - recommendation.content_based - INFO - Content-based model fitted
+2026-01-12 19:32:27,003 - recommendation.hybrid - INFO - Hybrid recommender fitted
+2026-01-12 19:32:27,006 - data_pipeline.load - INFO - Saved model 'hybrid_model' to models\hybrid_model.pkl
+2026-01-12 19:32:27,016 - __main__ - INFO - All models trained successfully
+2026-01-12 19:32:47,455 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:47,457 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:47,459 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:47,460 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:32:47,460 - main - INFO - Movie Recommendation System initialized
+2026-01-12 19:32:47,571 - main - INFO - Starting Movie Recommendation System API
+2026-01-12 19:33:00,962 - main - INFO - Shutting down Movie Recommendation System API
+2026-01-12 19:33:40,085 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:33:40,086 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:33:40,088 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:33:40,090 - storage.repositories - INFO - Database initialized successfully
+2026-01-12 19:33:40,091 - main - INFO - Movie Recommendation System initialized
+2026-01-12 19:33:40,173 - api.endpoints - INFO - Getting recommendations for user: user1
+2026-01-12 19:33:40,177 - main - WARNING - Models not trained, loading from disk
+2026-01-12 19:33:40,181 - main - INFO - Loading trained models from disk
+2026-01-12 19:33:40,219 - data_pipeline.load - INFO - Loaded model 'user_based_model' from models\user_based_model.pkl
+2026-01-12 19:33:40,269 - data_pipeline.load - INFO - Loaded model 'item_based_model' from models\item_based_model.pkl
+2026-01-12 19:33:40,285 - data_pipeline.load - INFO - Loaded model 'matrix_factorization_model' from models\matrix_factorization_model.pkl
+2026-01-12 19:33:40,304 - data_pipeline.load - INFO - Loaded model 'content_based_model' from models\content_based_model.pkl
+2026-01-12 19:33:40,323 - data_pipeline.load - INFO - Loaded model 'hybrid_model' from models\hybrid_model.pkl
+2026-01-12 19:33:40,324 - main - INFO - Models loaded successfully
+2026-01-12 19:33:40,325 - main - INFO - Generated 0 recommendations for user1
+2026-01-12 19:33:40,328 - httpx - INFO - HTTP Request: GET http://testserver/api/v1/recommendations/user1?n_recommendations=5 "HTTP/1.1 200 OK"
