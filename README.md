@@ -117,8 +117,17 @@ This will:
 ./run.sh serve
 ```
 
-# API will be available at http://localhost:8000
-# Documentation: http://localhost:8000/docs
+- **Working API URL:** http://localhost:8000
+- **API Documentation (Swagger UI):** http://localhost:8000/docs
+- **API Documentation (ReDoc):** http://localhost:8000/redoc
+
+- **Fetch OpenAPI (JSON) / Documentation programmatically:**
+
+```bash
+curl -sS http://localhost:8000/openapi.json -o openapi.json
+```
+
+You can open `openapi.json` in tooling that consumes OpenAPI/Swagger definitions or publish it as needed.
 
 5. Get Recommendations
 
