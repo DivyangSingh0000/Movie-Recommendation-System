@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+.venv
+venv/
+*.db
+automation/examples/output_valid/

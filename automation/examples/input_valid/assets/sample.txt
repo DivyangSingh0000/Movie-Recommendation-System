@@ -1,2 +1,0 @@
-This is a sample asset file.
-It represents a small binary/text asset in the package.
