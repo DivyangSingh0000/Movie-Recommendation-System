@@ -1,0 +1,3 @@
+2026-01-12 17:13:19,395 - INFO - Starting automation. input=D:\Project\Github\Movie Recommendation System\automation\examples\input_valid output=D:\Project\Github\Movie Recommendation System\automation\examples\output_valid
+2026-01-12 17:13:19,401 - INFO - Wrote summary to D:\Project\Github\Movie Recommendation System\automation\examples\output_valid\summary.json
+2026-01-12 17:13:19,404 - INFO - Automation completed successfully.

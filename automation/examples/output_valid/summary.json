@@ -1,0 +1,18 @@
+{
+  "metadata_present": true,
+  "metadata_keys": [
+    "title",
+    "version",
+    "created_by",
+    "description"
+  ],
+  "data_lines": 3,
+  "data_size_bytes": 59,
+  "assets_count": 1,
+  "assets_total_size_bytes": 87,
+  "assets_listing": [
+    "assets\\sample.txt"
+  ],
+  "total_files": 3,
+  "total_bytes": 312
+}
