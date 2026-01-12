@@ -229,7 +229,7 @@ start_api() {
     echo -e "${NC}"
     
     # Run the API server
-    uvicorn main:MovieRecommendationSystem().create_api_app() --host "$host" --port "$port" --reload
+    uvicorn "main:MovieRecommendationSystem().create_api_app()" --host "$host" --port "$port" --reload
 }
 
 run_recommendations() {
